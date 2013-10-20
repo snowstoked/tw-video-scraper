@@ -489,6 +489,7 @@ class Movie:
 				if int(data['total_results']) == 1:
 					# If the search has only 1 result, assume that it's the correct movie
 					match = True
+					movie = data['results'][0]
 				
 				if match == False:
 					for movie in data['results']:
